@@ -34,7 +34,6 @@ class FIFOCache(BaseCaching):
             first_key, _ = self.cache_data.popitem(last=False)
             print(f"DISCARD: {first_key}")
 
-
     def get(self, key):
         '''return the value in `self.cache_data` linked to `key`
         '''
